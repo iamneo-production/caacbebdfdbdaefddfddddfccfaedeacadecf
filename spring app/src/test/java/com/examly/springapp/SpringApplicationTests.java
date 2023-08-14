@@ -14,7 +14,10 @@ public class SpringApplicationTests {
 
     ChromeOptions chromeOptions = new ChromeOptions();
     WebDriver driver = null;
-    String 
+   
+    String fbUrl = "https://www.fb.com";
+	String facebookUrl = "https://www.facebook.com";
+    
     @BeforeTest
     public void beforeTest() throws Exception
      {
