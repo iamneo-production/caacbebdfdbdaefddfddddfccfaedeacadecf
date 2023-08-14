@@ -10,17 +10,14 @@ import org.testng.annotations.Test;
 
 public class SpringApplicationTests {
 	
-	WebDriver driver;
+	WebDriver driver=null;
 	
 	String fbUrl = "https://www.fb.com";
 	String facebookUrl = "https://www.facebook.com";
-	
+	FirefoxDriver options= new FirefoxDriver();
 	@BeforeClass
 	public void invokeBrowser(){
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\ADMIN\\Desktop\\virtusa assignment1\\Virtusa\\Chromedriver.exe");
-		driver = new ChromeDriver();
-		
+        System.setProperty("webdriver.chrome.driver", "/home/coder/project/workspace/chromedriver");
 		driver.manage().window().maximize();
 
 		driver.manage().deleteAllCookies();
